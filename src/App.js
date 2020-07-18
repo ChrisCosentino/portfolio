@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import { Route, Switch, withRouter } from "react-router-dom";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import "./styles.css";
 
@@ -10,27 +9,16 @@ import Footer from "./components/Footer";
 
 import About from "./components/About";
 
-function App({ location }) {
+function App() {
   return (
-    <div>
-      {/* <TransitionGroup className="transition-group">
-        <CSSTransition
-          key={location.key}
-          timeout={{ enter: 300, exit: 300 }}
-          classNames={"fade"}
-        > */}
-      <div>Hi</div>
-      {/* <Switch> */}
+    <Fragment>
       <Route exact path="/">
         <Header />
         <Projects />
         <Footer />
       </Route>
       <Route path="/about" exact component={About}></Route>
-      {/* </Switch> */}
-      {/* </CSSTransition>
-      </TransitionGroup> */}
-    </div>
+    </Fragment>
   );
 }
 
