@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Book Source",
+    "desc": "An E-Commerce website of an online book store. Created for final project in my university E-Commerce course.",
+    "link": "https://book-source.herokuapp.com/home",
+    "img": "https://firebasestorage.googleapis.com/v0/b/evernote-clone-dd253.appspot.com/o/book-source.jpg?alt=media&token=0120817e-9bd4-47a3-a8da-a7a03bca6f8d"
+  },
+  {
+    "name": "Linkups.ca",
+    "desc": "A website where all your links are combined into one",
+    "link": "http://www.linkups.ca/",
+    "img": "https://firebasestorage.googleapis.com/v0/b/evernote-clone-dd253.appspot.com/o/linkups.jpg?alt=media&token=4c28c168-106c-42e5-9bf4-e0cca1f4ae94"
+  },
+  {
+    "name": "Stawvote",
+    "desc": "A voting app similar to strawpoll.me",
+    "link": "https://strawvote.herokuapp.com/#/",
+    "img": "https://firebasestorage.googleapis.com/v0/b/evernote-clone-dd253.appspot.com/o/poll.png?alt=media&token=2101301a-9f9a-4e63-ae46-50be8aa3196b"
+  },
+  {
+    "name": "Covid Tracker",
+    "desc": "A Covid-19 cases tracker with cool map and charts interface",
+    "link": "https://chriscosentino.github.io/corona-tracker/",
+    "img": "https://firebasestorage.googleapis.com/v0/b/evernote-clone-dd253.appspot.com/o/covid.jpg?alt=media&token=d40475cc-0909-4600-9385-4873ce6bc951"
+  },
+  {
+    "name": "Days From Today",
+    "desc": "A website that tells you how many days a certain date is from today.",
+    "link": "https://daysfromtoday.web.app/",
+    "img": "https://firebasestorage.googleapis.com/v0/b/evernote-clone-dd253.appspot.com/o/daysfromtoday.png?alt=media&token=12697872-8215-4ecc-b6b8-7236e5fc3833"
+  },
+  {
+    "name": "Country Listings App",
+    "desc": "An app that displays information about all countries in the world",
+    "link": "https://chriscosentino.github.io/Country-Listings/",
+    "img": "https://firebasestorage.googleapis.com/v0/b/evernote-clone-dd253.appspot.com/o/Screen%20Shot%202020-07-12%20at%203.47.04%20PM.png?alt=media&token=eae89ac6-45fe-473d-86d4-327f8b1313d9"
+  }
+]

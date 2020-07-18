@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Overpass:wght@100;300;400;700&display=swap");
+
+:root {
+  --color-dark: #0f0f0f;
+  --color-light: #f3f3f3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* cursor: none; */
+}
+
+::selection {
+  background: #ffb7b7;
+}
+
+::-moz-selection {
+  background: #ffb7b7; /* Gecko Browsers */
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  /* background: #f1f1f1; */
+  background: transparent;
+  /* box-shadow: inset 0 0 5px grey; */
+  /* border-radius: 10px; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-dark);
+  /* border-radius: 10px; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  /* font-family: "Cabin", sans-serif; */
+}
+.container {
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 32px;
+  padding: 30px 0px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.projects-name {
+  background-color: var(--color-light);
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-size: 52px; */
+  font-size: 3.5rem;
+  border-radius: 10px;
+}
+
+.projects-name:hover {
+  cursor: pointer;
+}
+
+.projects-container {
+  /* background-color: #f3f3f3; */
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  padding: 0.7rem 0rem;
+
+  grid-template-columns: 1fr 1fr;
+}
+
+.project-container {
+  background-color: var(--color-dark);
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(243, 243, 243, 1);
+  -moz-box-shadow: 5px 5px 5px 5px rgba(243, 243, 243, 1);
+  box-shadow: 5px 5px 5px 5px rgba(243, 243, 243, 1);
+}
+
+.project-container > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project-info {
+  /* display: none; */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.4s ease;
+  background-color: var(--color-dark);
+  z-index: 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.project-container:hover .project-info {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.p-title {
+  font-size: 1.7rem;
+}
+
+.p-title:hover {
+  cursor: pointer;
+}
+
+.p-desc {
+}
+
+.p-desc:hover {
+  cursor: pointer;
+}
+
+.see-more:hover {
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  font-size: 3.5rem;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.icons > a {
+  margin: 0px 20px;
+  color: black;
+}
+
+.email {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+
+@media only screen and (min-width: 1100px) {
+  .projects-container {
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    padding-top: 2rem;
+    gap: 2rem;
+  }
+
+  .project-container {
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-container {
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  footer {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    font-size: 1.8rem;
+  }
+  .about-nav-link {
+    font-size: 1.8rem;
+  }
+  .about-header {
+    padding: 0;
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+  footer {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    padding: 5px;
+  }
+}
+
+.about {
+  background-color: var(--color-dark);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-header {
+  display: flex;
+  /* background-color: blue; */
+  /* width: 100%; */
+  width: 100%;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 32px;
+  padding: 30px 34px;
+}
+
+.about-nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: coral;
+}
+
+.hi {
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+}
+
+.about-text {
+  font-size: 1.6rem;
+  padding: 45px 60px;
+}
+
+.transition-group {
+  /* position: relative; */
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+  margin-left: 10px;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
