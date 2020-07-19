@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Route, Switch, withRouter } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 import "./styles.css";
 

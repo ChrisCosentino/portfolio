@@ -12,8 +12,13 @@ const Project = ({ project }) => {
       <div className="project-info">
         <span className="p-title">{project.name}</span>
         <span className="p-desc">{project.desc}</span>
-        <a className="see-more" href={project.link}>
-          See Project
+        <a
+          className="see-more"
+          target="_blank"
+          rel="noopener noreferrer"
+          href={project.link}
+        >
+          Visit Project
         </a>
       </div>
     </a>

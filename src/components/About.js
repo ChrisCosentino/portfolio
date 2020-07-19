@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { GitHub, Linkedin, Instagram } from "react-feather";
 
 const About = () => {
   return (
@@ -29,18 +30,53 @@ const About = () => {
         <span className="underline"> Java</span>.
         <br />
         <br />
-        Previously I've had the opportunity to work with award-winning studios
-        including DesignStudio, Sennep, AnalogFolk, ustwo and Wolff Olins.
+        Currently, I have just finished my Computer Science degree from York
+        University in Toronto, and I am looking for work.
         <br />
         <br />
-        I'm always looking to work on exciting projects that push the boundaries
-        of interaction design and digital branding.
+        I'm always looking to work on exciting projects and challenging
+        projects.
         <br />
         <br />
-        I'm available for full-time, part-time, co-op, and internship positions.
+        I'm available for full-time, part-time, contract, freelance, co-op, and
+        internship positions.
         <br />
         <br />
         Get in touch –
+        <br />
+        <a
+          href="mailto: chriscosentino@hotmail.com"
+          className="email"
+          style={{ color: "white" }}
+        >
+          chriscosentino@hotmail.com
+        </a>
+        <div className="about-icons">
+          <a
+            style={{ color: "white" }}
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/ChrisCosentino"
+          >
+            <GitHub />
+          </a>
+          <a
+            style={{ color: "white" }}
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/chriscosentino98/"
+          >
+            <Linkedin />
+          </a>
+          <a
+            style={{ color: "white" }}
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/chriscosentino_/?hl=en"
+          >
+            <Instagram />
+          </a>
+        </div>
       </div>
     </div>
   );

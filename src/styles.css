@@ -101,9 +101,11 @@ header {
   justify-content: center;
   border-radius: 10px;
   position: relative;
-  -webkit-box-shadow: 5px 5px 5px 5px rgba(243, 243, 243, 1);
-  -moz-box-shadow: 5px 5px 5px 5px rgba(243, 243, 243, 1);
-  box-shadow: 5px 5px 5px 5px rgba(243, 243, 243, 1);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project-container > img {
@@ -112,6 +114,14 @@ header {
   border-radius: 10px;
   object-fit: cover;
   object-position: center;
+}
+
+.about-icons {
+  display: flex;
+}
+
+.about-icons > a {
+  margin: 10px;
 }
 
 .project-info {
@@ -123,14 +133,14 @@ header {
   right: 0;
   opacity: 0;
   transition: 0.4s ease;
-  background-color: var(--color-dark);
+  background-color: white;
   z-index: 0;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -148,10 +158,17 @@ header {
 }
 
 .p-desc {
+  margin: 5px 50px;
+  text-align: center;
 }
 
 .p-desc:hover {
   cursor: pointer;
+}
+
+.see-more {
+  color: blue;
+  text-decoration: none;
 }
 
 .see-more:hover {
@@ -217,24 +234,46 @@ footer {
   header {
     font-size: 1.8rem;
   }
-  .about-nav-link {
+  /* .about-nav-link {
     font-size: 1.8rem;
-  }
-  .about-header {
+  } */
+  /* .about-header {
     padding: 0;
     margin: 0;
     font-size: 1.8rem;
-  }
-  .container {
+  } */
+  /* .about-header > span {
+    margin: 0;
+    padding: 0;
+  } */
+  /* .about-header > a {
+    margin: 0;
+    padding: 0;
+  } */
+  /* .about {
     padding: 0;
     margin: 0;
-  }
+  } */
+
+  /* .container {
+    padding: 0;
+    margin: 0;
+  } */
   footer {
     font-size: 1.6rem;
   }
 }
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
   .container {
+    padding: 5px;
+  }
+} */
+
+@media only screen and (max-width: 320px) {
+  .container {
+    padding: 5px;
+  }
+  .about {
     padding: 5px;
   }
 }
